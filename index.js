@@ -3,7 +3,7 @@ var map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/codedriven/ckm0u5lzw3qfy17lk7lbb1mdp', // style URL
     center: [-114.07116744127545, 51.01951879728364], // starting position [lng, lat]
-    zoom: 7 // starting zoom
+    zoom:11 // starting zoom
 });
 
 map.addControl(new mapboxgl.NavigationControl());
