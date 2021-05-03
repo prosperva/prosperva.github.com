@@ -17,8 +17,8 @@ body { margin: 0; padding: 0; }
 	mapboxgl.accessToken = 'pk.eyJ1IjoiY29kZWRyaXZlbiIsImEiOiJja20wdDIzY3oyOHA0Mm9zNWJmazhlOTMwIn0.8MntRE4biSPIUE8z6-odvQ';
     var map = (window.map = new mapboxgl.Map({
         container: 'map',
-        zoom: 3,
-        center: [7.5, 58],
+        zoom: 11,
+        center: [-114.07116744127545, 51.01951879728364],
         style: 'mapbox://styles/mapbox/light-v10',
         antialias: true // create the gl context with MSAA antialiasing, so custom layers are antialiased
     }));
@@ -67,16 +67,16 @@ body { margin: 0; padding: 0; }
 
             // define vertices of the triangle to be rendered in the custom style layer
             var helsinki = mapboxgl.MercatorCoordinate.fromLngLat({
-                lng: 25.004,
-                lat: 60.239
+                lng: -114.09256,
+                lat: 51.064331
             });
             var berlin = mapboxgl.MercatorCoordinate.fromLngLat({
-                lng: 13.403,
-                lat: 52.562
+                lng: -114.19257,
+                lat: 51.03402
             });
             var kyiv = mapboxgl.MercatorCoordinate.fromLngLat({
-                lng: 30.498,
-                lat: 50.541
+                lng: -114.057968,
+                lat: 51.04731
             });
 
             // create and initialize a WebGLBuffer to store vertex and color data
