@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style type="text/css">
+            body { margin: 0; padding: 0; }
+            #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+            .marker {
+                background-image: url('mapbox-icon.png');
+                background-size: cover;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .mapboxgl-popup {
+                max-width: 600px;
+                font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            }
+
+            .mapboxgl-popup-content {
+                /* background-color: brown !important; */
+                text-align: left;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .mapboxgl-popup-content p{
+                margin-bottom: 0px;
+            }
+
+            .mapboxgl-popup-content h3 a{
+                text-decoration: none;
+                outline: none;
+            }
+
+            .mapboxgl-popup-content h3 a:visited, .mapboxgl-popup-content h3 a:visited{
+                color:blue;
+            }
+
+            .mapboxgl-popup-tip, .mapboxgl-ctrl-attrib-inner, .mapboxgl-ctrl-logo{display: none;}
+        </style>
+    </head>
+    <body>
+        <div id="map"></div>
+        
+        <link href="mapbox.css" rel="stylesheet">
+        <script src="mapbox.js"></script>
+        <script src="data.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
